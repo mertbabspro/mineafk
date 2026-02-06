@@ -16,7 +16,7 @@ const rl = readline.createInterface({
 bot.once('spawn', async () => {
   console.log('Sunucuya girildi.'),
   await sleep(2000)
-  bot.chat('/login allahuekber ')
+  bot.chat('/login benbitben ')
   console.log('Login atıldı')
 
   // Itemlerin gelmesini bekle
@@ -35,7 +35,8 @@ bot.once('spawn', async () => {
   console.log('5. slota sol tık atıldı.')
 
   // 3 saniye bekle
-  await sleep(3000)
+  await sleep(5000)
+  bot.chat("/afk")
 
   // Direkt 24. slota tıkla (index 23)
   try {
@@ -71,4 +72,5 @@ function sleep(ms) {
 
 bot.on('error', err => console.log('Hata:', err))
 bot.on('end', () => console.log('Bot bağlantısı kesildi.'))
+
 
