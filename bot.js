@@ -3,7 +3,7 @@ const readline = require('readline')
 
 const bot = mineflayer.createBot({
   host: 'zurnacraft.net',
-  username: 'wasg0d',
+  username: 'ytufgeasx',
   version: false
 })
 
@@ -71,3 +71,4 @@ function sleep(ms) {
 
 bot.on('error', err => console.log('Hata:', err))
 bot.on('end', () => console.log('Bot bağlantısı kesildi.'))
+
